@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Zeeshan Shaikh</div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Zeeshan Shaikh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/ID/me.png" alt="Profile pic" class="pr-pic" >
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Zeeshan Shaikh</h1>
+            <p class="section__text__p2">Developer</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('Assets/ID/SWE_Resume_Zee.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+
+            <div class="socials-container">
+                <img src="Assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/zeeshan-shaikh-b91048240/'">
+                <img src="Assets/social.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/Zeeshan2604?tab=repositories'">
+                <img src="Assets/Hackerrank-01.png" alt="My HackerRank Profile" class="icon" onclick="location.href='https://www.hackerrank.com/profile/shaikh_zeeshan21'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="Assets/ID/IMG_20230606_125556.jpg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="Assets/certificate.png" alt="Education icon" class="icon">
+                        <h3>Education</h3><br>
+                        <div class="passion-containers">
+                            <div class="details-container pas"><h4>Bachelor of Engineering<p> in Computer Science - 6.79 cgpa<h5>(2021-2025)</h5> </p></h4></div>
+                            <div class="details-container pas"><h4>Higher Secondary Certificate<p> Maharashtra State Board - 87%<h5>(2019-2021)</h5></p></h4></div>
+                        </div>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="Assets/passion.png" alt="Experience icon" class="icon">
+                        <h3>Passion</h3><br>
+                        <div class="passion-containers">
+                            <div class="details-container pas">Game Development</div>
+                            <div class="details-container pas">Psychology</div>
+                            <div class="details-container pas">Anime Art</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Meticulous and organized individual With leadership qualities. Innovative, creative, quick learner and willing to contribute ideas and learn new things. I have experience in developing virtual reality environments and games. May it be website design or game design I am on my front-foot to work on it.</p>
+                </div>
+            </div>
+        </div>
+        <img src="Assets/fast-forward.png" alt="Arrow icon" class="arrow icon" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container" >
+                    <h2 class="experience-sub-title">Game Developer <br><p>(Feb '24 - Mar '24)</p></h2>
+                    <h4>@ Avai. Space</h4><br>
+                    <p>Experienced Game Developer with 2 months of hands-on experience in developing and implementing game features. <br>Managed project development by enhancing visuals by 30%, 3D designing and modeling assets, and deploying and testing the project. <br>Collaborated with cross-functional teammates to optimize user experience.</p>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full Stack Web Developer <br><p>(Feb '24 - Apr '24)</p></h2>
+                    <h4>@ Edunet Foundation</h4><br>
+                    <p>Created a Car Rental System with Django, Python, and MySQL. Addressed various aspects of Frontend and Backend development. Utilized Django and Python for system development. <br>Implemented a comprehensive Car Rental System with database integration.</p>
+                </div>
+            </div>
+        </div>
+        <img src="Assets/fast-forward.png" alt="Arrow icon" class="arrow icon" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <video class="video" autoplay muted loop src="Assets/Projects/Astronaut.mp4"></video>
+                    <h2 class="experience-sub-title project-title">Astronaut </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/zeeshan-shaikh-b91048240_ue5-cgi-3drenders-activity-7215942904870019072-oj8p?utm_source=share&utm_medium=member_desktop'">
+                            View
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container mob">
+                    <video class="video" autoplay muted loop src="Assets/Projects/Lamb.mp4"></video>
+                    <h2 class="experience-sub-title project-title">Lamborghini Drift </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/zeeshan-shaikh-b91048240_madewithunrealengine-unreaengine5-ue5-activity-7209815021361516544-5NO_?utm_source=share&utm_medium=member_desktop'">
+                            View
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <video class="video" autoplay muted loop src="Assets/Projects/Woodsmp4.mp4"></video>
+                    <h2 class="experience-sub-title project-title">Ambient Woods</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/zeeshan-shaikh-b91048240_unrealengine-unrealengine5-madewithue5-activity-7205849389989376000-fz-u?utm_source=share&utm_medium=member_desktop'">
+                            View
+                        </button>
+                        
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="Assets/Projects/h1.PNG" alt="Project 1" class="project-img">
+                    <h2 class="experience-sub-title project-title">Tiera Fashion</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://zeeshan2604.github.io/Tiera-E-Commerce-Website/index.html'">
+                            Website
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Zeeshan2604/Tiera-E-Commerce-Website/tree/master'">
+                            Repository
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br><br><br><br>
+        <img src="Assets/fast-forward.png" alt="Arrow icon" class="arrow icon prj-icon" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="details-container contact-info-container">
+                <img src="Assets/mail.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:shaikh.zeeshan2604@gmail.com">shaikh.zeeshan2604@gmail.com</a></p>
+            </div>
+            <div class="details-container contact-info-container">
+                <img src="Assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/zeeshan-shaikh-b91048240/">LinkedIn</a></p>
+            </div>
+        </div>
+        <img src="Assets/aarrow-up.png" alt="Arrow icon" class="arrow icon footer-icon" onclick="location.href='./#'">
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Zeeshan Shaikh, All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
