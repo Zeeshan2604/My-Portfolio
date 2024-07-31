@@ -38,7 +38,7 @@
       display: block;
     }
     #projects{
-        height: 260vh;
+        height: 285vh;
         width: 90vw;
         margin: 16px;
     }
@@ -47,6 +47,8 @@
     }
     .project-img{
         height: 25vh;
+        margin-top: -6vh;
+        margin-bottom: -6vh;
     }
     
     .video{
